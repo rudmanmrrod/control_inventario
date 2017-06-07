@@ -1,0 +1,23 @@
+<div class="row text-center">
+	<h1>{{title}}</h1>
+	<div class="form-group">
+		<label for="name">Nombre</label>
+		<input type="text" class="form-control" placeholder="Ingresa el nombre del producto" ng-model="producto.nombre">
+	</div>
+	<div class="form-group">
+		<label for="name">Código</label>
+		<input type="text" class="form-control" placeholder="Ingresa el nombre del producto" ng-model="producto.codigo">
+	</div>
+	<div class="form-group">
+		<label for="name">Descripcion</label>
+		<textarea class="form-control" ng-model="producto.descripcion"></textarea>
+	</div>
+	<div class="form-group">
+		<label for="name">Categorias</label>
+		<select class="form-control" ng-model="producto.categoria">
+			<option ng-repeat="categoria in categorias" value="{{categoria.pk_categoria}}">{{categoria.nombre}}</option>
+		</select>
+	</div>
+	<a type="button" href="#/producto" class="btn btn-md btn-warning">Volver</a>
+	<button class="btn btn-md btn-success" ng-click="CrearRegistro()">{{button}}</button>
+</div>

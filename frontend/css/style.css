@@ -1,0 +1,28 @@
+.navbar-blue
+{
+	background-color:steelblue;
+}
+
+.navbar-blue a
+{
+	color:white;
+}
+
+.navbar-blue a:hover
+{
+	color:silver;
+}
+
+.navbar-blue ul.nav a:hover
+{
+	background-color:rgb(70, 140, 220);
+}
+
+.navbar-blue ul.nav a:visited
+{
+	background-color:rgb(70, 140, 220);
+}
+
+.navbar-right {
+	margin-right: 0px;
+}

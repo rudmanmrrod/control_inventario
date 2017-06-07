@@ -1,0 +1,16 @@
+<div class="row text-center">
+	<h1>{{title}}</h1>
+	<a type="button" href="#/producto/view" class="btn btn-md btn-warning">Regresar</a>
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			{{producto.nombre}}
+		</div>
+		<div class="panel-body">
+			<ul class="list-group text-left">
+				<li class="list-group-item"><strong>Código: </strong>{{producto.codigo}}</li>
+				<li class="list-group-item"><strong>Descripcion: </strong>{{producto.descripcion}}</li>
+				<li class="list-group-item"><strong>Categoría: </strong>{{producto.fk_categoria}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
